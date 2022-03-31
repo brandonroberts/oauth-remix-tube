@@ -18,7 +18,7 @@ export default function Auth() {
 
   function login(e: FormEvent<any>) {
     e.preventDefault();
-    api.account.createOAuth2Session('google', 'http://localhost:3000/auth/callback', 'http://localhost:3000/auth');
+    api.account.createOAuth2Session('google', 'http://localhost:3000/auth/callback', 'http://localhost:3000/login');
   }
 
   return (
